@@ -40,13 +40,13 @@ const Inner = styled.div`
 `;
 
 const BigTitle = styled.h1`
-  ${tw("text-5xl lg:text-6xl font-serif text-blue-grey mb-6 tracking-wide")};
+  ${tw("text-5xl lg:text-6xl text-black mb-6 tracking-wide")};
   text-shadow: 0 5px 35px rgba(255, 255, 255, 0.15);
 `;
 
 const Title = styled.h1`
   ${tw(
-    "text-4xl lg:text-4xl font-serif text-blue-grey mb-8 tracking-wide relative inline-block"
+    "text-4xl lg:text-4xl text-black mb-8 tracking-wide relative inline-block"
   )};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   &:before {
@@ -63,7 +63,7 @@ const Title = styled.h1`
 `;
 
 const Subtitle = styled.p`
-  ${tw("text-2xl lg:text-4xl font-sans text-blue-grey mt-8 xxl:w-3/4")};
+  ${tw("text-2xl lg:text-4xl text-black mt-8 xxl:w-3/4")};
   text-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
@@ -136,21 +136,21 @@ const Index = () => (
             icon="triangle"
             className={hidden}
             width={48}
-            stroke={colors.orange}
+            stroke={colors["perso-pink"]}
             left="10%"
             top="20%"
           />
           <SVG
             icon="hexa"
             width={48}
-            stroke={colors.red}
+            stroke={colors["perso-pink"]}
             left="60%"
             top="70%"
           />
           <SVG
             icon="box"
             width={6}
-            fill={colors["grey-darker"]}
+            fill={colors["perso-pink"]}
             left="60%"
             top="15%"
           />
@@ -160,7 +160,7 @@ const Index = () => (
             icon="arrowUp"
             className={hidden}
             width={16}
-            fill={colors["blue-dark"]}
+            fill={colors["perso-pink"]}
             left="80%"
             top="10%"
           />
@@ -174,7 +174,7 @@ const Index = () => (
           <SVG
             icon="circle"
             width={16}
-            fill={colors["grey-darker"]}
+            fill={colors["perso-pink"]}
             left="70%"
             top="90%"
           />
@@ -286,16 +286,18 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Bienvenue, <br /> à la journée libre en fête.
+            Bienvenue, <br /> à la journée{" "}
+            <span class="shake">libre en fête.</span>
           </BigTitle>
           <Subtitle>
             Libre en fête est une journée dans le cadre de la semaine du
-            logiciel libre. Cette évènement ce trouvera à Alençon le 8 Mars.
+            logiciel libre. Cette évènement ce trouvera à{" "}
+            <span class="shake">Alençon le 8 Mars.</span>
           </Subtitle>
         </Hero>
       </Content>
       <DividerMiddle
-        bg="linear-gradient(to right, SlateBlue 0%, DeepSkyBlue 100%)"
+        bg="linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);"
         speed={-0.2}
         offset={1.1}
         factor={2}
@@ -331,7 +333,8 @@ const Index = () => (
               link="https://www.behance.net/gallery/38068151/Eagle"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
             >
-              Lorem, ipsum dolor sit amet  adat iis impedit. Dignissimos laudantium, dolores eos ut inventore nam..
+              Lorem, ipsum dolor sit amet adat iis impedit. Dignissimos
+              laudantium, dolores eos ut inventore nam..
             </ProjectCard>
           </ProjectsWrapper>
         </Inner>
@@ -524,20 +527,21 @@ const Index = () => (
           <AboutHero>
             <Avatar src={avatar} alt="Ethix" />
             <AboutSub>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit autem, laborum alias earum ea suscipit perspiciatis commodi quaerat, 
-              consequatur, dicta impedit? 
-              Cupiditate quis veritatis quos sapiente similique animi, eos et..
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+              autem, laborum alias earum ea suscipit perspiciatis commodi
+              quaerat, consequatur, dicta impedit? Cupiditate quis veritatis
+              quos sapiente similique animi, eos et..
             </AboutSub>
           </AboutHero>
           <AboutDesc>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Distinctio cupiditate eius dolor itaque cum labore nam hic, quas, 
-            veritatis rerum dolorum aperiam, 
-            fuga neque perspiciatis voluptatum non necessitatibus totam odit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio
+            cupiditate eius dolor itaque cum labore nam hic, quas, veritatis
+            rerum dolorum aperiam, fuga neque perspiciatis voluptatum non
+            necessitatibus totam odit?
           </AboutDesc>
         </Inner>
       </Content>
-      <Divider fill="#23262b" speed={0.2} offset={4}>
+      <Divider fill="#44107A" speed={0.2} offset={4}>
         <WaveWrapper>
           <InnerWave>
             <svg
@@ -559,17 +563,12 @@ const Index = () => (
       </Divider>
       <Content speed={0.4} offset={4}>
         <Inner>
-          <Title>Get in touch</Title>
-          <ContactText>
-            On reste en contact.
-          </ContactText>
+          <Title>On reste en contact</Title>
+          <ContactText>On reste en contact.</ContactText>
         </Inner>
         <Footer>
-          &copy; 2018 by Gatsby Starter Portfolio Cara.{" "}
-          <a href="https://github.com/LekoArts/gatsby-starter-portfolio-cara">
-            Github Repository
-          </a>
-          .
+          &copy; 2018 by Charles-Edouard Toutain.{" "}
+          <a href="https://www.charles-edouard-toutain.fr">Site web</a>.
         </Footer>
       </Content>
       <Divider speed={0.1} offset={4}>

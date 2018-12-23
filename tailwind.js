@@ -49,6 +49,11 @@ const colors = {
   'blue-black': '#161719',
   'blue-grey': '#23262b',
 
+  perso: '#4158D0',
+  'perso-blue': '#C850C0',
+  'perso-violet': '#FFCC70',
+  'perso-pink': '#FF1361',
+
   black: '#222b2f',
   'grey-darkest': '#273238',
   'grey-darker': '#364349',
